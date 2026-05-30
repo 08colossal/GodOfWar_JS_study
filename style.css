@@ -9,9 +9,27 @@
     background-size: cover;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 20px auto;
+}
+:root{
+ --azul:rgb(12, 45, 107); 
+ --branco: white; 
+ --cinza:rgba(0, 0, 0, 0.01);
+}
+
+.box{
+    display: inline-block;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border-color: black;
+}
 #character{
     backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color:var(--cinza);
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -19,16 +37,17 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    user-select: none;
 }
 #character h2 {
-    font-size:30px;
-    color: white;
+    font-size:40px;
+    color: var(--branco);
     text-transform: uppercase;
 }
 
 #character h3{
-    color:white;
-    text-shadow: 0 1px 5px rgb(43, 83, 156);
+    color:var(--branco);
+    text-shadow: 0 1px 5px var(--azul);
     img{
         width: 20px;
     }
@@ -41,14 +60,40 @@
 }
 
 #character blockquote{
-    color:rgb(226, 226, 226);
+    color:var(--branco);
+    text-shadow: 0 1px 5px var(--azul);
+
+}
+
+#character blockquote:hover{
+    text-shadow: 0 1px 10px;
 }
 
 #btn:hover{
-    background-color: rgb(20, 55, 92);
-    color: rgb(255, 255, 255);
+    color: var(--azul);
+    background-color: var(--branco);
+
+}
+
+#btn:focus{
+    background-color:  var(--azul);
+    color:var(--branco);
+}
+
+#pesquisa:focus::placeholder{
+    color:var(--branco);
 }
 
 #pesquisa:hover{
-    color:rgb(71, 109, 214);
+    color:var(--azul);
+}
+
+#pesquisa:focus{
+    outline:none;
+     background-color:  var(--azul);
+    color:vaR(--branco);
+}
+
+#pesquisa{
+    width:11.5rem;
 }
