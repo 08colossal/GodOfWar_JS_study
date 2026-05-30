@@ -6,6 +6,7 @@
     background-position: center;
     align-items: center;
     min-width: 100vh;
+    max-height: 100vh;
     background-size: cover;
 }
 
