@@ -1,6 +1,7 @@
 ﻿body{
     background-image: url("https://images.wallpapersden.com/image/download/god-of-war-ragnaroek-background-2022_bWptbmiUmZqaraWkpJRmaGhrrWxrbQ.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     align-items: center;
     min-height: 100vh;
