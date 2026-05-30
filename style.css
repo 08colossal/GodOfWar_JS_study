@@ -1,11 +1,23 @@
-﻿body{
+﻿body {
     background-image: url("https://images.wallpapersden.com/image/download/god-of-war-ragnaroek-background-2022_bWptbmiUmZqaraWkpJRmaGhrrWxrbQ.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 100vw;
+    
+    /* 1. FAZ A IMAGEM COBRIR 100% DA TELA SEM DISTORCER */
+    background-size: cover;
+
+    /* 2. CENTRALIZA O CARD, INPUT E BOTÃO NA TELA */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos um embaixo do outro */
+    align-items: center;    /* Centraliza tudo na horizontal */
+    justify-content: center; /* Centraliza tudo na vertical (opcional, fica ótimo) */
+    
+    /* 3. CONTROLE DE ALTURA SEGURO */
+    min-height: 100vh; /* Garante os 100% de altura, mas deixa esticar se o texto crescer */
+    margin: 0;
+    padding: 20px; /* Um espacinho interno para o conteúdo não colar no topo/fundo em telas pequenas */
+    box-sizing: border-box; /* Garante que o padding não quebre o tamanho da tela */
 }
 
 #character{
