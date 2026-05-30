@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 #character{
